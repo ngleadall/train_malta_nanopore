@@ -85,25 +85,44 @@ The main performance marker of a basecaller we care about is the overall Assembl
 
 We can also take a look at the assembly length bias, which tells us if a given basecaller is prone to reference insertions or deletions 
 
-![ image 4 ](https://github.com/ngleadall/train_malta_nanopore/blob/maaster/images/img_4.png)
+![ image 4 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_4.png)
 
-A great comparison of basecallers exists here: ![basecaller comparison](https://github.com/rrwick/Basecalling-comparison) 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-We will be using albacore 1.1.1, which is available to download from the ONT community.
+A great comparison of basecallers exists here: ![basecaller comparison](https://github.com/rrwick/Basecalling-comparison)
 
-If we run without any options, then we get usage instructions:
+# 6) Recommended workflow 
+
+There are two difference workflows we recommend based on which sequencer you have available. 
+
+![ image 5 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_5.png)
+
+# 7) Basecalling results 
+
+Lets take a look inside the new **basecalled_reads/** directory we just created
 
 ```sh
-read_fast5_basecaller.py
+ls basecalled_reads/
 ```
+
+Important directory:**workspace/**
+```sh
+ls basecalled_reads/workspace/
+```
+This contains two sub-directories **pass/** and **fail/** which contain the basecalled read data in fastq format (ready for use with common aligners like BW). 
+
+**pass/** obviously contains all of the reads which can be used in further downstream analysis and **fail/** contains reads which are un-useable 
+
+```sh
+ls basecalled_reads/workspace/pass/
+```
+
+
+  
+  
+  
+  
+  
+  
+  
+
   
 
