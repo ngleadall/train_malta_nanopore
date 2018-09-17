@@ -6,16 +6,19 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
   * Alba Sanchis-Juan (as2635@medschl.cam.ac.uk) 
   * Nick Gleadall (ng384@medschl.cam.ac.uk) 
   
-# Aims
+# 1) Aims
 
   Overall: How to take Oxford Nanopore (ON) data from raw signal to called variants
   
   In this part of the session: 
-    *Learn about data format 
-    *Basecalling  
-    *Basic sequence QC 
-
-  
+    -Learn about data format 
+    -Basecalling  
+    -Basic sequence QC
+    
+ # 2) Starting point
+ 
+  ![ image 1 ] 
+  (https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_1.png)
   
   
   
