@@ -75,6 +75,17 @@ So lets basecall
 ```sh
 read_fast5_basecaller.py --flowcell FLO-MIN106 --kit SQK-PCS108 --input reads/ --recursive --worker_threads 4 --save_path basecalled_reads/ 
 ```
+# 5.i) A word about basecallers 
+
+As previously mentioned many basecallers are available. 
+
+The main performance marker of a basecaller we care about is the overall Assembly Identity (how much a final alignment matches the reference) 
+
+![ image 3 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_3.png)
+
+We can also take a look at the assembly length bias, which tells us if a given basecaller is prone to reference insertions or deletions 
+
+![ image 4 ](https://github.com/ngleadall/train_malta_nanopore/images/img_4.png)
 
   
   
