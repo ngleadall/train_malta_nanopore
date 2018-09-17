@@ -1,11 +1,10 @@
-Monday 17 September 2018
-University of Cambridge
-Cambridge, UK
+
+Monday 17 September 2018, University of Cambridge, Cambridge, UK
 
 # Instructors
 
-  * Alba Sanchis-Juan 
-  * Nick Gleadall 
+  * Alba Sanchis-Juan (as2635@medschl.cam.ac.uk) 
+  * Nick Gleadall (ng384@medschl.cam.ac.uk) 
   
 # Aims
 
