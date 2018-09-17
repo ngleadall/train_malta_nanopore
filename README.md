@@ -59,10 +59,12 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
  ```sh
  h5dump reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5 | less 
  ```
- (Hint: press q to exit less, a text reading program) 
+ (**Hint**: press q to exit less, a text reading program) 
  
  # 5) basecalling 
+ This is the process of translating raw electrical signal data from an ON sequencer to DNA sequence 
  
+ This is a critcal step in the data analysis pipeline - Basecalling can make sequence data good or bad 
  
  
  
