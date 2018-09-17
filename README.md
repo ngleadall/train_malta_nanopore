@@ -43,7 +43,7 @@ ls reads/0/
  
 Nanopore writes read data to a file format they call **FAST5**
 
-1 read = 1 .fast5 file 
+**1 read** = **1 .fast5** file 
  
 **FAST5** files are infact **HDF5** files. These are compressed binary files which store data in a structured way, allowing fast random access to subsets of the data. 
  
