@@ -13,7 +13,6 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
   In this part of the session we will learn about Data formats , Basecalling and Run QC
     
 # 2) Starting point
-![ image_1 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_1.png)
 <img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_1.png" alt="img_1" class="inline"/>
 
 # 3) Raw reads
@@ -49,7 +48,7 @@ Nanopore writes read data to a file format they call **FAST5**
  
 This is where electronic signal data from the sequencer is storred
  
-![ image_2 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_2.png)
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_2.png" alt="img_2" class="inline"/>
  
 Lets look at the structure of a  **FAST5** file 
 ```sh
@@ -90,11 +89,11 @@ As previously mentioned many basecallers are available.
 
 The main performance marker of a basecaller that we care about is the overall **Assembly Identity** (how much a final alignment matches the reference) 
 
-![ image_3 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_3.png)
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_3.png" alt="img_3" class="inline"/>
 
 We can also take a look at the **assembly length bias** which tells us if a given basecaller is prone to reference insertions or deletions 
 
-![ image_4 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_4.png)
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_4.png" alt="img_4" class="inline"/>
 
 A great comparison of basecallers exists here: ![basecaller comparison](https://github.com/rrwick/Basecalling-comparison)
 
@@ -102,7 +101,7 @@ A great comparison of basecallers exists here: ![basecaller comparison](https://
 
 There are two different workflows we recommend based on which sequencer you have available. 
 
-![ image_5 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_5.png)
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_5.png" alt="img_5" class="inline"/>
 
 # 7) Basecalling results 
 
@@ -146,7 +145,7 @@ Open Rstudio and load the following script
 # Final Comment
 This was a **VERY** basic overview of nanopore data analysis. Below is a diagram showing the parts of an overall workflow this tutorial has covered.
 
-![ image_6 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_6.png)
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_6.png" alt="img_6" class="inline"/>
 
 
 
