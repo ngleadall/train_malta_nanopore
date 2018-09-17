@@ -131,11 +131,14 @@ To see the basic format of a .fastq file run the command below. fastq's will be 
 ```sh
 less basecalled_reads/workspace/pass/fastq_runid_eeb92128ecdaf98ba8cd29e26976e99b3843f88e_0.fastq
 ```
+(**Hint**: press q to exit less, a text reading program)
 
 Important file: **sequencing_summary.txt** 
 ```sh
 less basecalled_reads/sequencing_summary.txt
 ```
+(**Hint**: press q to exit less, a text reading program)
+
 This file can be used to plot basic run statistics as part of QC
 
 # 8) Basic run QC 
