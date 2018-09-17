@@ -13,19 +13,24 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
   In this part of the session we will learn about Data formats , Basecalling and Run QC
     
 # 2) Starting point
-![ image 1 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_1.png)
-  
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_1.png" alt="img_1" class="inline"/>
+
 # 3) Raw reads
  
-All nanopore data is writted to a specific directory
+All nanopore data is written to a specific run directory. Change to the example directory below 
  
 ```sh 
-cd ~/CourseMaterials/nanopore_practical/
+cd ~/Course_Materials/nanopore_practical/
+```
+```sh
 ls 
+```
+Lets take a look in the **reads/** directory. This is where the sequencer writes raw data. 
+```sh
 ls reads/ 
 ```
  
-You should see two directories; (0/ and 1/)
+You should see two directories: (0/ and 1/)
  
 ON machines write reads in batches (here batch size is 4000) 
 This is to keep the number of files in each directory resonable for the computers filesystem 
@@ -36,20 +41,23 @@ ls reads/0/
 # 4) FAST5 files 
  
 Nanopore writes read data to a file format they call **FAST5**
+
 1 read = 1 .fast5 file 
  
 **FAST5** files are infact **HDF5** files. These are compressed binary files which store data in a structured way, allowing fast random access to subsets of the data. 
  
 This is where electronic signal data from the sequencer is storred
  
-![ image 2 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_2.png)
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_2.png" alt="img_2" class="inline"/>
  
 Lets look at the structure of a  **FAST5** file 
 ```sh
 h5ls reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5
 ```
  
-This shows the top level data keys. We can view the subkeys by recursivley listing the file 
+This shows the top level data keys. 
+
+We can view the subkeys by recursivley listing the file 
 ```sh 
 h5ls -r reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5
 ```
@@ -75,35 +83,81 @@ So lets basecall
 ```sh
 read_fast5_basecaller.py --flowcell FLO-MIN106 --kit SQK-PCS108 --input reads/ --recursive --worker_threads 4 --save_path basecalled_reads/ 
 ```
-# 5.i) A word about basecallers 
+# 5.i) A comment about basecallers 
 
 As previously mentioned many basecallers are available. 
 
-The main performance marker of a basecaller we care about is the overall Assembly Identity (how much a final alignment matches the reference) 
+The main performance marker of a basecaller that we care about is the overall **Assembly Identity** (how much a final alignment matches the reference) 
 
-![ image 3 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_3.png)
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_3.png" alt="img_3" class="inline"/>
 
-We can also take a look at the assembly length bias, which tells us if a given basecaller is prone to reference insertions or deletions 
+We can also take a look at the **assembly length bias** which tells us if a given basecaller is prone to reference insertions or deletions 
 
-![ image 4 ](https://github.com/ngleadall/train_malta_nanopore/blob/maaster/images/img_4.png)
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_4.png" alt="img_4" class="inline"/>
 
+A great comparison of basecallers exists here: ![basecaller comparison](https://github.com/rrwick/Basecalling-comparison)
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-We will be using albacore 1.1.1, which is available to download from the ONT community.
+# 6) Recommended workflow 
 
-If we run without any options, then we get usage instructions:
+There are two different workflows we recommend based on which sequencer you have available. 
+
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_5.png" alt="img_5" class="inline"/>
+
+# 7) Basecalling results 
+
+Lets take a look inside the new **basecalled_reads/** directory we just created
 
 ```sh
-read_fast5_basecaller.py
+ls -1 basecalled_reads/
 ```
+
+Important directory: **workspace/**
+```sh
+ls basecalled_reads/workspace/
+```
+This contains two sub-directories **pass/** and **fail/** which contain the basecalled read data in fastq format (ready for use with common aligners like BW). 
+
+**pass/** obviously contains all of the reads which can be used in further downstream analysis and **fail/** contains reads which are un-useable 
+
+```sh
+ls basecalled_reads/workspace/pass/
+```
+To see the basic format of a .fastq file run the command below. fastq's will be covered further in tomorrows session
+```sh
+less basecalled_reads/workspace/pass/fastq_runid_eeb92128ecdaf98ba8cd29e26976e99b3843f88e_0.fastq
+```
+
+Important file: **sequencing_summary.txt** 
+```sh
+less basecalled_reads/sequencing_summary.txt
+```
+This file can be used to plot basic run statistics as part of QC
+
+# 8) Basic run QC 
+
+It is much easier to view this data in R. 
+
+Open Rstudio and load the following script
+```sh 
+~/Course_Materials/nanopore_practical/scripts/basic_sequence_qc.r
+```
+
+# Final Comment
+This was a **VERY** basic overview of nanopore data analysis. Below is a diagram showing the parts of an overall workflow this tutorial has covered.
+
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_6.png" alt="img_6" class="inline"/>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
   
 
