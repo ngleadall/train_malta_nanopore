@@ -149,7 +149,7 @@ It is much easier to view this data in **R**.
 
 Open **Rstudio** (blue icon on the left) and load the following script
 ```sh 
-~/Course_Materials/nanopore_practical/scripts/basic_sequence_qc.r
+~/Desktop/Course_Materials/nanopore_practical/scripts/basic_sequence_qc.r
 ```
 
 # Final Comment
