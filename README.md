@@ -85,7 +85,8 @@ The main performance marker of a basecaller we care about is the overall Assembl
 
 We can also take a look at the assembly length bias, which tells us if a given basecaller is prone to reference insertions or deletions 
 
-![ image 4 ](https://github.com/ngleadall/train_malta_nanopore/images/img_4.png)
+![ image 4 ](https://github.com/ngleadall/train_malta_nanopore/blob/maaster/images/img_4.png)
+
 
   
   
