@@ -136,6 +136,8 @@ Open Rstudio and load the following script
 ```sh 
 ~/Course_Materials/nanopore_practical/scripts/basic_sequence_qc.r
 ```
+
+# Final Comment
 This was a **VERY** basic overview of nanopore data analysis. Below is a diagram showing the parts of an overall workflow this tutorial has covered.
 
 ![ image_6 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_6.png)
