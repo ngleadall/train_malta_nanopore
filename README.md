@@ -21,7 +21,12 @@ All nanopore data is writted to a specific directory
  
 ```sh 
 cd ~/CourseMaterials/nanopore_practical/
+```
+```sh
 ls 
+```
+
+```sh
 ls reads/ 
 ```
  
