@@ -51,7 +51,7 @@ This is where electronic signal data from the sequencer is storred
  
 <img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_2.png" alt="img_2" class="inline"/>
  
-Lets look at the structure of a  **FAST5** file 
+Lets look at the structure of a  **FAST5** file using h5ls
 ```sh
 h5ls reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5
 ```
@@ -67,7 +67,8 @@ We can also dump and view the entire contents of a **FAST5**
 ```sh
 h5dump reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5 | less 
 ```
-(**Hint**: press q to exit less, a text reading program) 
+(**Hint 1**: use the mouse wheel to scroll up and down the file) 
+(**Hint 2**: press q to exit less, a text reading program) 
 
 # 5) Basecalling 
 This is the process of translating raw electrical signal data from an ON sequencer to DNA sequence. Basecalling is a critical step in the analysis workflow as poor basecalling makes poor sequence data. 
