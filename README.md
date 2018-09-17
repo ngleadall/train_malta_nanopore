@@ -11,12 +11,20 @@ Cambridge, UK
 
 # Instructors
 
-  - Alba Sanchis-Juan 
-  - Nick Gleadall 
+  * Alba Sanchis-Juan 
+  * Nick Gleadall 
   
 # Aims
 
-  -Overall: How to take Oxford Nanopore (ON) data from raw signal to called variants
+  Overall: How to take Oxford Nanopore (ON) data from raw signal to called variants
+  
+  In this part of the session: 
+    *Learn about data format 
+    *Basecalling  
+    *Basic sequence QC 
+
+  
+  
   
   
   
