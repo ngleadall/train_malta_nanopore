@@ -54,7 +54,9 @@ Lets look at the structure of a  **FAST5** file
 h5ls reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5
 ```
  
-This shows the top level data keys. We can view the subkeys by recursivley listing the file 
+This shows the top level data keys. 
+
+We can view the subkeys by recursivley listing the file 
 ```sh 
 h5ls -r reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5
 ```
