@@ -46,6 +46,28 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
  
  -This is where electronic signal data from the sequencer is storred
  
+ ![ image 2 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_2.png)
+ 
+ -Lets look at the structure of a  **FAST5** file 
+ ```sh
+ h5ls reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5
+ ```
+ 
+ -This shows the top level data keys. We can view the subkeys by recursivley listing the file 
+ ```sh 
+ h5ls -r reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5
+ ```
+ 
+ - We can also dump and view the entire contents of a **FAST5*** 
+ ```sh
+ h5dump reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_9998_ch_295_strand.fast5 | less 
+ ```
+ (Hint: press q to exit less, a text reading program) 
+ 
+ # 5) basecalling 
+ 
+ 
+ 
  
   
   
