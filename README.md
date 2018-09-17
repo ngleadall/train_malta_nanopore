@@ -91,7 +91,7 @@ A great comparison of basecallers exists here: ![basecaller comparison](https://
 
 # 6) Recommended workflow 
 
-There are two difference workflows we recommend based on which sequencer you have available. 
+There are two different workflows we recommend based on which sequencer you have available. 
 
 ![ image 5 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_5.png)
 
@@ -114,6 +114,26 @@ This contains two sub-directories **pass/** and **fail/** which contain the base
 ```sh
 ls basecalled_reads/workspace/pass/
 ```
+Important file:**sequencing_summary.txt** 
+```sh
+less basecalled_reads/sequencing_summary.txt
+```
+This file can be used to plot basic run statistics as part of QC
+
+# 8) Basic run QC 
+
+It is much easier to view this data in R. 
+
+Open Rstudio and load the following script
+```sh 
+~/Course_Materials/nanopore_practical/scripts/basic_sequence_qc.r
+```
+This was a **VERY** basic overview of nanopore data analysis. Below is a diagram showing the parts of an overall workflow this tutorial has covered.
+
+![ image 6 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_6.png)
+
+
+
 
 
   
