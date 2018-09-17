@@ -83,7 +83,7 @@ So lets basecall
 ```sh
 read_fast5_basecaller.py --flowcell FLO-MIN106 --kit SQK-PCS108 --input reads/ --recursive --worker_threads 4 --save_path basecalled_reads/ 
 ```
-# 5.i) A word about basecallers 
+# 5.i) A comment about basecallers 
 
 As previously mentioned many basecallers are available. 
 
