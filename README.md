@@ -10,18 +10,19 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
 
   Overall: How to take Oxford Nanopore (ON) data from raw signal to called variants
   
-  In this part of the session we will learn about Data formats , Basecalling and Run QC
+  In this part of the session we will learn about **Data formats** , **Basecalling** and **Basic Quality Control(QC)**
     
 # 2) Starting point
 <img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_1.png" alt="img_1" class="inline"/>
 
 # 3) Raw reads
  
-All nanopore data is written to a specific run directory. Change to the example directory below 
+All nanopore data is written to a specific run directory. Change to the example directory below...
  
 ```sh 
 cd ~/Course_Materials/nanopore_practical/
 ```
+... and list it to see what is there
 ```sh
 ls 
 ```
