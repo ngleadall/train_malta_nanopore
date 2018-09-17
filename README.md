@@ -61,16 +61,21 @@ h5dump reads/0/GXB01206_20180518_FAH88225_GA50000_sequencing_run_CD3_92236_read_
 (**Hint**: press q to exit less, a text reading program) 
 
 # 5) Basecalling 
-This is the process of translating raw electrical signal data from an ON sequencer to DNA sequence 
- 
-This is a critcal step in the data analysis pipeline - Basecalling can make sequence data good or bad 
- 
- 
- 
-  
-  
-  
-  
+This is the process of translating raw electrical signal data from an ON sequencer to DNA sequence. Basecalling is a critical step in the analysis workflow as poor basecalling makes poor sequence data. 
+
+Many basecallers exist - but for now we will be using Albacore v2.3.3 developed by ON 
+
+For basecalling it is important to know which **Flow Cell** and **Library Prep Kit** was used. To see all the combinations which Albacore can handle try: 
+
+```sh
+read_fast5_basecaller.py -l 
+```
+
+So lets basecall
+```sh
+read_fast5_basecaller.py --flowcell FLO-MIN106 --kit SQK-PCS108 --input reads/ --recursive --worker_threads 4 --save_path basecalled_reads/ 
+```
+
   
   
   
