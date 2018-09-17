@@ -17,18 +17,26 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
     
  # 2) Starting point
  
-  ![ image 1 ] 
-  (https://github.com/ngleadall/train_malta_nanopore/images/img_1.png)
+  ![ image 1 ](https://github.com/ngleadall/train_malta_nanopore/images/img_1.png)
   
  # 3) Raw reads
  
  All nanopore data is writted to a specific directory
  
- '''sh 
+ ```sh 
  cd ~/CourseMaterials/nanopore_practical/
  ls 
  ls reads/ 
- '''
+ ```
+ 
+ You should see two directories; (0/ and 1/)
+ 
+ -ON machines write reads in batches (here batch size is 4000) 
+ -This is to keep the number of files in each directory resonable for the computers filesystem 
+ 
+ ```sh
+ ls reads/0/ 
+ ```
  
  
   
