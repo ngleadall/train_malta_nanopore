@@ -95,7 +95,7 @@ We can also take a look at the **assembly length bias** which tells us if a give
 
 <img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_4.png" alt="img_4" class="inline"/>
 
-A great comparison of basecallers exists here: [basecaller comparison](https://github.com/rrwick/Basecalling-comparison)
+A great comparison of basecallers exists here: [https://github.com/rrwick/Basecalling-comparison]
 
 # 6) Recommended workflow 
 
