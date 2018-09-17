@@ -14,8 +14,8 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
     
 # 2) Starting point
 ![ image_1 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_1.png)
-<img src="https://github.com/ngleadall/train_malta_nanopore/images/img_1.png" alt="img_1" class="inline"/>
-  
+<img src="//raw.githubusercontent.com/ngleadall/train_malta_nanopore/master/images/img_1.png" alt="img_1" class="inline"/>
+
 # 3) Raw reads
  
 All nanopore data is writted to a specific directory
