@@ -17,7 +17,7 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
 
 # 3) Raw reads
  
-All nanopore data is writted to a specific directory
+All nanopore data is written to a specific run directory. Change to the example directory below 
  
 ```sh 
 cd ~/Course_Materials/nanopore_practical/
@@ -25,7 +25,7 @@ cd ~/Course_Materials/nanopore_practical/
 ```sh
 ls 
 ```
-
+Lets take a look in the **reads/** directory. This is where the sequencer writes raw data. 
 ```sh
 ls reads/ 
 ```
