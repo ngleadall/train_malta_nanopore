@@ -87,7 +87,7 @@ We can also take a look at the assembly length bias, which tells us if a given b
 
 ![ image 4 ](https://github.com/ngleadall/train_malta_nanopore/blob/maaster/images/img_4.png)
 
-
+A great comparison of basecallers exists here: ![basecaller comparison](https://github.com/rrwick/Basecalling-comparison) 
   
   
   
