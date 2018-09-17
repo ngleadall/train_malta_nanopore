@@ -20,7 +20,7 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
 All nanopore data is writted to a specific directory
  
 ```sh 
-cd ~/CourseMaterials/nanopore_practical/
+cd ~/Course_Materials/nanopore_practical/
 ```
 ```sh
 ls 
@@ -30,7 +30,7 @@ ls
 ls reads/ 
 ```
  
-You should see two directories; (0/ and 1/)
+You should see two directories: (0/ and 1/)
  
 ON machines write reads in batches (here batch size is 4000) 
 This is to keep the number of files in each directory resonable for the computers filesystem 
@@ -41,6 +41,7 @@ ls reads/0/
 # 4) FAST5 files 
  
 Nanopore writes read data to a file format they call **FAST5**
+
 1 read = 1 .fast5 file 
  
 **FAST5** files are infact **HDF5** files. These are compressed binary files which store data in a structured way, allowing fast random access to subsets of the data. 
