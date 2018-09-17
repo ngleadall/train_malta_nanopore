@@ -13,8 +13,8 @@ Monday 17 September 2018, University of Cambridge, Cambridge, UK
   In this part of the session we will learn about Data formats , Basecalling and Run QC
     
 # 2) Starting point
-![ image_1 ](https://github.com/ngleadall/train_malta_nanopore/images/img_1.png)
-<img src="train_malta_nanopore/images/img_1.png " alt="img_1" class="inline"/>
+![ image_1 ](https://github.com/ngleadall/train_malta_nanopore/blob/master/images/img_1.png)
+<img src="https://github.com/ngleadall/train_malta_nanopore/images/img_1.png " alt="img_1" class="inline"/>
   
 # 3) Raw reads
  
