@@ -108,10 +108,10 @@ There are two different workflows we recommend based on which sequencer you have
 Lets take a look inside the new **basecalled_reads/** directory we just created
 
 ```sh
-ls basecalled_reads/
+ls -1 basecalled_reads/
 ```
 
-Important directory:**workspace/**
+Important directory: **workspace/**
 ```sh
 ls basecalled_reads/workspace/
 ```
@@ -122,7 +122,12 @@ This contains two sub-directories **pass/** and **fail/** which contain the base
 ```sh
 ls basecalled_reads/workspace/pass/
 ```
-Important file:**sequencing_summary.txt** 
+To see the basic format of a .fastq file run the command below. fastq's will be covered further in tomorrows session
+```sh
+less basecalled_reads/workspace/pass/fastq_runid_eeb92128ecdaf98ba8cd29e26976e99b3843f88e_0.fastq
+```
+
+Important file: **sequencing_summary.txt** 
 ```sh
 less basecalled_reads/sequencing_summary.txt
 ```
