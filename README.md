@@ -143,9 +143,9 @@ This file can be used to plot basic run statistics as part of QC
 
 # 8) Basic run QC 
 
-It is much easier to view this data in R. 
+It is much easier to view this data in **R**. 
 
-Open Rstudio and load the following script
+Open **Rstudio** (blue icon on the left) and load the following script
 ```sh 
 ~/Course_Materials/nanopore_practical/scripts/basic_sequence_qc.r
 ```
